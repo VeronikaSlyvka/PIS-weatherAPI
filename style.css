@@ -147,3 +147,20 @@ p {
     font-size: 2rem;
   }
 }
+
+/* Стилі для Select2 */
+.select2-container {
+  width: 100% !important;
+}
+
+/* Стиль для рекомендацій */
+.recommendation {
+  font-size: 1.2rem;
+  color: #00796b;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Решта стилів залишається без змін */
+
