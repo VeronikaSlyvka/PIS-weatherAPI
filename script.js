@@ -1,5 +1,4 @@
 // script.js
-
 const citySelect = document.getElementById('citySelect');
 const weatherInfo = document.getElementById('weatherInfo');
 const errorDiv = document.getElementById('error');
@@ -20,12 +19,12 @@ window.addEventListener('load', () => {
   }
 });
 
-citySelect.addEventListener('change', async () => {
-  const value = citySelect.value;
+$('#citySelect').on('change', async function () {
+  const value = this.value;
   if (!value) return;
   
   // Логування вибраного міста
-  console.log('Вибрано місто:', value);
+  console.log('Вибрано місто (через jQuery):', value);
  
   localStorage.setItem('selectedCity', value);
 
@@ -67,7 +66,7 @@ const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lo
     document.body.style.backgroundColor = backgroundColor; // змінюємо фон
 
     const html = `
-      <h2>${data.name}</h2>
+      <h2>${citySelect.options[citySelect.selectedIndex].text}</h2>
       <div class="weather-icon">
         <img src="${icon}" alt="${data.weather[0].description}" />
       </div>
