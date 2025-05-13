@@ -11,7 +11,6 @@
  8. Якщо відповідь з API не вдалося отримати (наприклад, через помилку мережі або неправильний ключ API), веб-застосунок відображає повідомлення про помилку та пропонує спробувати ще раз.
 
 ## Приклад API-запиту
-```http
-GET https://api.openweathermap.org/data/2.5/weather?lat=50.45&lon=30.52&appid=API_KEY&units=metric&lang=ua```
-
 API-ключ зберігається в окремому файлі config.js. Цей файл не додається до GitHub щоб зберегти безпеку.
+```http
+GET https://api.openweathermap.org/data/2.5/weather?lat=50.45&lon=30.52&appid=API_KEY&units=metric&lang=ua
