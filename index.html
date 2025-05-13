@@ -7,7 +7,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   
-  <!-- Підключення jQuery перед Select2 -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" />
 </head>
@@ -15,13 +14,12 @@
   <div class="container">
     <header>
       <h1>Прогноз погоди</h1>
-      <p>Дізнайся актуальну погоду в будь-якому місті України</p>
+      <p>Дізнайся актуальну погоду в будь-якому обласному центрі України</p>
     </header>
 
     <div class="weather-card">
       <select id="citySelect" class="city-select">
         <option value="">Оберіть місто</option>
-        <!-- Додати всі 24 обласні центри України -->
         <option value="50.45,30.52">Київ</option>
         <option value="49.84,24.03">Львів</option>
         <option value="46.48,30.73">Одеса</option>
@@ -39,12 +37,14 @@
         <option value="50.46,30.58">Чернівці</option>
         <option value="48.45,35.07">Хмельницький</option>
         <option value="49.98,36.27">Луганськ</option>
-        <option value="50.32,30.67">Кременчук</option>
-        <option value="50.04,33.23">Біла Церква</option>
-        <option value="49.72,34.99">Кривий Ріг</option>
-        <option value="50.11,37.66">Донецьк</option>
-        <option value="49.74,33.34">Мелітополь</option>
         <option value="49.19,31.62">Чернігів</option>
+        <option value="50.43,30.95">Вінниця</option>
+        <option value="49.34,25.93">Тернопіль</option>
+        <option value="49.48,34.64">Рівне</option>
+        <option value="44.95,34.11">Сімферополь</option> 
+        <option value="50.45,25.33">Донецьк</option> 
+        <option value="50.85,25.33">Херсон</option> 
+        <option value="50.66,26.34">Луцьк</option> 
       </select>
 
       <div id="loader" class="loader"></div>
@@ -55,9 +55,8 @@
   </div>
 
   <script src="./config.js"></script>
-  <!-- Підключення скрипта -->
   <script src="./script.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script> <!-- Підключення бібліотеки для пошуку -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script> 
 </body>
 </html>

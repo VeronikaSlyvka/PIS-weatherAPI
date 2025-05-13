@@ -1,4 +1,3 @@
-/* Загальний стиль для сторінки */
 * {
   margin: 0;
   padding: 0;
@@ -94,7 +93,6 @@ p {
   display: none;
 }
 
-/* Спінер для завантаження */
 .loader {
   border: 8px solid #f3f3f3;
   border-top: 8px solid #2d6a4f;
@@ -111,7 +109,6 @@ p {
   100% { transform: rotate(360deg); }
 }
 
-/* Анімація для появи погоди */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -123,7 +120,6 @@ p {
   }
 }
 
-/* Стиль для іконки погоди */
 .weather-icon {
   display: inline-block;
   background-color: #7ebdd8;
@@ -148,12 +144,10 @@ p {
   }
 }
 
-/* Стилі для Select2 */
 .select2-container {
   width: 100% !important;
 }
 
-/* Стиль для рекомендацій */
 .recommendation {
   font-size: 1.2rem;
   color: #00796b;
@@ -161,6 +155,3 @@ p {
   margin-top: 20px;
   text-align: center;
 }
-
-/* Решта стилів залишається без змін */
-
